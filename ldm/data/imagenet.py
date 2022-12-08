@@ -10,9 +10,40 @@ from PIL import Image
 from tqdm import tqdm
 from torch.utils.data import Dataset, Subset
 
-import taming.data.utils as tdu
-from taming.data.imagenet import str_to_indices, give_synsets_from_indices, download, retrieve
-from taming.data.imagenet import ImagePaths
+import os, tarfile, glob, shutil
+import yaml
+from torch.utils.data import Dataset
+
+import ldm.data.utils as tdu
+from ldm.data.base import ImagePaths
+from ldm.util import download, retrieve
+
+
+def give_synsets_from_indices(indices, path_to_yaml="data/imagenet_idx_to_synset.yaml"):
+    synsets = []
+    with open(path_to_yaml) as f:
+        di2s = yaml.load(f)
+    for idx in indices:
+        synsets.append(str(di2s[idx]))
+    print("Using {} different synsets for construction of Restriced Imagenet.".format(len(synsets)))
+    return synsets
+
+
+def str_to_indices(string):
+    """Expects a string in the format '32-123, 256, 280-321'"""
+    assert not string.endswith(","), "provided string '{}' ends with a comma, pls remove it".format(string)
+    subs = string.split(",")
+    indices = []
+    for sub in subs:
+        subsubs = sub.split("-")
+        assert len(subsubs) > 0
+        if len(subsubs) == 1:
+            indices.append(int(subsubs[0]))
+        else:
+            rang = [j for j in range(int(subsubs[0]), int(subsubs[1]))]
+            indices.extend(rang)
+    return sorted(indices)
+
 
 from ldm.modules.image_degradation import degradation_fn_bsr, degradation_fn_bsr_light
 

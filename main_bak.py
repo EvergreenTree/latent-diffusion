@@ -295,7 +295,7 @@ class ImageLogger(Callback):
         self.batch_freq = batch_frequency
         self.max_images = max_images
         self.logger_log_images = {
-            pl.loggers.tensorboard.TensorBoardLogger: self._testtube,
+            pl.loggers.TestTubeLogger: self._testtube,
         }
         self.log_steps = [2 ** n for n in range(int(np.log2(self.batch_freq)) + 1)]
         if not increase_log_steps:
@@ -518,7 +518,7 @@ if __name__ == "__main__":
         # merge trainer cli with config
         trainer_config = lightning_config.get("trainer", OmegaConf.create())
         # default to ddp
-#         trainer_config["accelerator"] = "ddp"
+        trainer_config["accelerator"] = "ddp"
         for k in nondefault_trainer_args(opt):
             trainer_config[k] = getattr(opt, k)
         if not "gpus" in trainer_config:
@@ -539,25 +539,24 @@ if __name__ == "__main__":
 
         # default logger configs
         default_logger_cfgs = {
-            "tensorboard": {
-                "target": "pytorch_lightning.loggers.tensorboard.TensorBoardLogger",
+            "wandb": {
+                "target": "pytorch_lightning.loggers.WandbLogger",
                 "params": {
-#                     "name": nowname,
-                    "name": "tensorboard",
+                    "name": nowname,
                     "save_dir": logdir,
                     "offline": opt.debug,
                     "id": nowname,
                 }
             },
-            "wandb": {
-                "target": "pytorch_lightning.loggers.wandb.WandbLogger",
+            "testtube": {
+                "target": "pytorch_lightning.loggers.TestTubeLogger",
                 "params": {
-                    "name": "wandb",
+                    "name": "testtube",
                     "save_dir": logdir,
                 }
             },
         }
-        default_logger_cfg = default_logger_cfgs["tensorboard"]
+        default_logger_cfg = default_logger_cfgs["testtube"]
         if "logger" in lightning_config:
             logger_cfg = lightning_config.logger
         else:
