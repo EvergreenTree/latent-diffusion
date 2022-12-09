@@ -1,0 +1,320 @@
+[D 14:15:00.173 NotebookApp] Searching ['/gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/etc/jupyter', '/gpfs7kw/linkhome/rech/genmic01/use18zg/.jupyter', '/linkhome/rech/genmic01/use18zg/.local/etc/jupyter', '/usr/local/etc/jupyter', '/etc/jupyter'] for config files
+[D 14:15:00.174 NotebookApp] Looking for jupyter_config in /etc/jupyter
+[D 14:15:00.174 NotebookApp] Looking for jupyter_config in /usr/local/etc/jupyter
+[D 14:15:00.174 NotebookApp] Looking for jupyter_config in /linkhome/rech/genmic01/use18zg/.local/etc/jupyter
+[D 14:15:00.174 NotebookApp] Looking for jupyter_config in /gpfs7kw/linkhome/rech/genmic01/use18zg/.jupyter
+[D 14:15:00.175 NotebookApp] Looking for jupyter_config in /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/etc/jupyter
+[D 14:15:00.192 NotebookApp] Looking for jupyter_notebook_config in /etc/jupyter
+[D 14:15:00.192 NotebookApp] Looking for jupyter_notebook_config in /usr/local/etc/jupyter
+[D 14:15:00.192 NotebookApp] Looking for jupyter_notebook_config in /linkhome/rech/genmic01/use18zg/.local/etc/jupyter
+[D 14:15:00.193 NotebookApp] Looking for jupyter_notebook_config in /gpfs7kw/linkhome/rech/genmic01/use18zg/.jupyter
+[D 14:15:00.193 NotebookApp] Loaded config file: /gpfs7kw/linkhome/rech/genmic01/use18zg/.jupyter/jupyter_notebook_config.py
+[D 14:15:00.198 NotebookApp] Loaded config file: /gpfs7kw/linkhome/rech/genmic01/use18zg/.jupyter/jupyter_notebook_config.json
+[D 14:15:00.198 NotebookApp] Looking for jupyter_notebook_config in /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/etc/jupyter
+[D 14:15:00.624 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/etc/jupyter/jupyter_notebook_config.json
+[D 14:15:00.624 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/usr/local/etc/jupyter/jupyter_notebook_config.json
+[D 14:15:00.624 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/linkhome/rech/genmic01/use18zg/.local/etc/jupyter/jupyter_notebook_config.json
+[D 14:15:00.624 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/gpfs7kw/linkhome/rech/genmic01/use18zg/.jupyter/jupyter_notebook_config.json
+[D 14:15:00.625 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/etc/jupyter/jupyter_notebook_config.json
+[I 14:15:21.263 NotebookApp] jupyter_tensorboard extension loaded.
+[I 14:15:21.263 NotebookApp] Serving notebooks from local directory: /linkhome/rech/genmic01/use18zg
+[I 14:15:21.263 NotebookApp] Jupyter Notebook 6.5.2 is running at:
+[I 14:15:21.264 NotebookApp] https://jean-zay-iam20:8002/jean-zay-iam20_8002/
+[I 14:15:21.264 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 14:15:28.823 NotebookApp] 302 GET /jean-zay-iam20_8002/ (10.148.0.38) 0.430000ms
+[I 14:15:28.962 NotebookApp] 302 GET /jean-zay-iam20_8002/tree? (10.148.0.38) 0.380000ms
+[D 14:15:29.086 NotebookApp] Using contents: services/contents
+[D 14:15:29.220 NotebookApp] Path base/images/favicon.ico served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/base/images/favicon.ico
+[D 14:15:29.292 NotebookApp] Path components/jquery-ui/dist/themes/smoothness/jquery-ui.min.css served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/jquery-ui/dist/themes/smoothness/jquery-ui.min.css
+[D 14:15:29.345 NotebookApp] Path components/jquery-typeahead/dist/jquery.typeahead.min.css served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/jquery-typeahead/dist/jquery.typeahead.min.css
+[D 14:15:29.401 NotebookApp] Path style/style.min.css served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/style/style.min.css
+[D 14:15:29.440 NotebookApp] Path auth/css/override.css served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/auth/css/override.css
+[D 14:15:29.479 NotebookApp] Path components/es6-promise/promise.min.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/es6-promise/promise.min.js
+[D 14:15:29.524 NotebookApp] Path components/react/react.production.min.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/react/react.production.min.js
+[D 14:15:29.550 NotebookApp] Path components/react/react-dom.production.min.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/react/react-dom.production.min.js
+[D 14:15:29.611 NotebookApp] Path components/create-react-class/index.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/create-react-class/index.js
+[D 14:15:29.644 NotebookApp] Path components/requirejs/require.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/requirejs/require.js
+[D 14:15:29.666 NotebookApp] Path base/images/logo.png served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/base/images/logo.png
+[D 14:15:29.686 NotebookApp] 200 GET /jean-zay-iam20_8002/login?next=%2Fjean-zay-iam20_8002%2Ftree%3F (10.148.0.38) 600.250000ms
+[D 14:15:29.860 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/jquery-ui/dist/themes/smoothness/jquery-ui.min.css?v=32f9dcde0cd9843f2b66d34c1c9928b59a5d7ef007ba7a6a6a790b3e78f7857a698444d7a716dfaf8fa834c3b3175efd258bbc07cfc4aabb86769b07e5f358c3 (10.148.0.38) 0.740000ms
+[D 14:15:29.886 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/jquery-typeahead/dist/jquery.typeahead.min.css?v=5edf53bf6bb9c3b1ddafd8594825a7e2ed621f19423e569c985162742f63911c09eba2c529f8fb47aebf27fafdfe287d563347f58c1126b278189a18871b6a9a (10.148.0.38) 0.540000ms
+[D 14:15:30.169 NotebookApp] 200 GET /jean-zay-iam20_8002/static/style/style.min.css?v=e1ab1c38b672063a6541baf468c83345cd0f509729783ec9b7ccb64073004f5f056110c82c28aefbf3dbf32e0e040f05b8f0420bc411b669ed3d4f07511812ca (10.148.0.38) 0.800000ms
+[D 14:15:30.203 NotebookApp] 200 GET /jean-zay-iam20_8002/static/auth/css/override.css?v=7d24c52c4d63c7ed3ca286c051f232acd6a5ee3ed2aa32f56bea22ef20a2e3d184a638aad5602a39e8d5ef9a66ed93fdbaf80cf979948a947bab117618bd6486 (10.148.0.38) 0.540000ms
+[D 14:15:30.250 NotebookApp] Path custom.css served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/custom/custom.css
+[D 14:15:30.251 NotebookApp] 200 GET /jean-zay-iam20_8002/custom/custom.css (10.148.0.38) 21.770000ms
+[D 14:15:30.256 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/es6-promise/promise.min.js?v=bea335d74136a63ae1b5130f5ac9a50c6256a5f435e6e09fef599491a84d834a8b0f011ca3eaaca3b4ab6a2da2d3e1191567a2f171e60da1d10e5b9d52f84184 (10.148.0.38) 0.550000ms
+[D 14:15:30.378 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/react/react.production.min.js?v=9a0aaf84a316c8bedd6c2ff7d5b5e0a13f8f84ec02442346cba0b842c6c81a6bf6176e64f3675c2ebf357cb5bb048e0b527bd39377c95681d22468da3d5de735 (10.148.0.38) 0.550000ms
+[D 14:15:30.476 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/create-react-class/index.js?v=894ad57246e682b4cfbe7cd5e408dcd6b38d06af4de4f3425991e2676fdc2ef1732cbd19903104198878ae77de12a1996de3e7da3a467fb226bdda8f4618faec (10.148.0.38) 0.560000ms
+[D 14:15:30.477 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/react/react-dom.production.min.js?v=6fc58c1c4736868ff84f57bd8b85f2bdb985993a9392718f3b4af4bfa10fb4efba2b4ddd68644bd2a8daf0619a3844944c9c43f8528364a1aa6fc01ec1b8ae84 (10.148.0.38) 0.610000ms
+[D 14:15:30.506 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/requirejs/require.js?v=d37b48bb2137faa0ab98157e240c084dd5b1b5e74911723aa1d1f04c928c2a03dedf922d049e4815f7e5a369faa2e6b6a1000aae958b7953b5cc60411154f593 (10.148.0.38) 0.650000ms
+[D 14:15:31.614 NotebookApp] 200 GET /jean-zay-iam20_8002/static/base/images/logo.png?v=a2a176ee3cee251ffddf5fa21fe8e43727a9e5f87a06f9c91ad7b776d9e9d3d5e0159c16cc188a3965e00375fb4bc336c16067c688f5040c0c2d4bfdb852a9e4 (10.148.0.38) 0.620000ms
+[D 14:15:32.170 NotebookApp] Path auth/js/main.min.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/auth/js/main.min.js
+[D 14:15:32.199 NotebookApp] 200 GET /jean-zay-iam20_8002/static/auth/js/main.min.js?v=20221209141500 (10.148.0.38) 39.190000ms
+[D 14:15:32.595 NotebookApp] 200 GET /jean-zay-iam20_8002/static/base/images/favicon.ico?v=50afa725b5de8b00030139d09b38620224d4e7dba47c07ef0e86d4643f30c9bfe6bb7e1a4a1c561aa32834480909a4b6fe7cd1e17f7159330b6b5914bf45a880 (10.148.0.38) 0.600000ms
+[W 14:15:33.562 NotebookApp] Not allowing login redirect to '/jean-zay-iam20_8002/tree?'
+[I 14:15:33.562 NotebookApp] 302 POST /jean-zay-iam20_8002/login?next=%2Fjean-zay-iam20_8002%2Ftree%3F (10.148.0.38) 210.230000ms
+[I 14:15:33.654 NotebookApp] 302 GET /jean-zay-iam20_8002/ (10.148.0.38) 0.230000ms
+[D 14:15:33.742 NotebookApp] Using contents: services/contents
+[D 14:15:33.786 NotebookApp] Path tree/js/main.min.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/tree/js/main.min.js
+[D 14:15:33.811 NotebookApp] 200 GET /jean-zay-iam20_8002/tree? (10.148.0.38) 69.420000ms
+[D 14:15:33.924 NotebookApp] 304 GET /jean-zay-iam20_8002/custom/custom.css (10.148.0.38) 0.480000ms
+[D 14:15:33.961 NotebookApp] 200 GET /jean-zay-iam20_8002/static/tree/js/main.min.js?v=4fd7e6b96f9964ab8f5d6db2d8db81a913eb9c3440709921777af29e85f13b5d51918e731ba5f7984d4ffc130a5b81cd8f236b62d37b155f8cb3ca0f076ea8d2 (10.148.0.38) 1.890000ms
+[D 14:15:38.700 NotebookApp] Path services/contents.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/services/contents.js
+[D 14:15:38.719 NotebookApp] 200 GET /jean-zay-iam20_8002/static/services/contents.js?v=20221209141500 (10.148.0.38) 23.610000ms
+[D 14:15:38.725 NotebookApp] Path custom-preload.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/custom/custom-preload.js
+[D 14:15:38.727 NotebookApp] 200 GET /jean-zay-iam20_8002/custom/custom-preload.js?v=20221209141500 (10.148.0.38) 4.960000ms
+[D 14:15:38.821 NotebookApp] Paths used for configuration of tree: 
+    	/etc/jupyter/nbconfig/tree.json
+[D 14:15:38.849 NotebookApp] Paths used for configuration of tree: 
+    	/usr/local/etc/jupyter/nbconfig/tree.json
+[D 14:15:38.850 NotebookApp] Paths used for configuration of tree: 
+    	/linkhome/rech/genmic01/use18zg/.local/etc/jupyter/nbconfig/tree.json
+[D 14:15:38.854 NotebookApp] Paths used for configuration of tree: 
+    	/gpfs7kw/linkhome/rech/genmic01/use18zg/.jupyter/nbconfig/tree.json
+[D 14:15:38.866 NotebookApp] Paths used for configuration of tree: 
+    	/gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/etc/jupyter/nbconfig/tree.json
+[D 14:15:38.867 NotebookApp] 200 GET /jean-zay-iam20_8002/api/config/tree?_=1670591738471 (10.148.0.38) 46.460000ms
+[D 14:15:38.870 NotebookApp] Paths used for configuration of common: 
+    	/etc/jupyter/nbconfig/common.json
+[D 14:15:38.870 NotebookApp] Paths used for configuration of common: 
+    	/usr/local/etc/jupyter/nbconfig/common.json
+[D 14:15:38.871 NotebookApp] Paths used for configuration of common: 
+    	/linkhome/rech/genmic01/use18zg/.local/etc/jupyter/nbconfig/common.json
+[D 14:15:38.871 NotebookApp] Paths used for configuration of common: 
+    	/gpfs7kw/linkhome/rech/genmic01/use18zg/.jupyter/nbconfig/common.json
+[D 14:15:38.871 NotebookApp] Paths used for configuration of common: 
+    	/gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/etc/jupyter/nbconfig/common.json
+[D 14:15:38.872 NotebookApp] 200 GET /jean-zay-iam20_8002/api/config/common?_=1670591738472 (10.148.0.38) 1.760000ms
+[D 14:15:39.098 NotebookApp] Path components/font-awesome/fonts/fontawesome-webfont.woff2 served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/font-awesome/fonts/fontawesome-webfont.woff2
+[D 14:15:39.116 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 (10.148.0.38) 20.120000ms
+[D 14:15:39.141 NotebookApp] 200 GET /jean-zay-iam20_8002/api/terminals?_=1670591738473 (10.148.0.38) 0.350000ms
+[D 14:15:39.257 NotebookApp] Found kernel python3 in /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/share/jupyter/kernels
+[D 14:15:42.077 NotebookApp] 200 GET /jean-zay-iam20_8002/api/kernelspecs (10.148.0.38) 2871.650000ms
+[D 14:15:42.086 NotebookApp] 200 GET /jean-zay-iam20_8002/api/sessions?_=1670591738474 (10.148.0.38) 1.560000ms
+[D 14:15:42.086 NotebookApp] 200 GET /jean-zay-iam20_8002/api/terminals?_=1670591738475 (10.148.0.38) 1.550000ms
+[D 14:15:42.092 NotebookApp] Path custom.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/custom/custom.js
+[D 14:15:42.095 NotebookApp] 200 GET /jean-zay-iam20_8002/custom/custom.js?v=20221209141500 (10.148.0.38) 10.070000ms
+[D 14:15:42.147 NotebookApp] Path jupyter_tensorboard/tree.js served from /gpfs7kw/linkhome/rech/genmic01/use18zg/.local/share/jupyter/nbextensions/jupyter_tensorboard/tree.js
+[D 14:15:42.149 NotebookApp] 200 GET /jean-zay-iam20_8002/nbextensions/jupyter_tensorboard/tree.js?v=20221209141500 (10.148.0.38) 54.300000ms
+[D 14:15:42.337 NotebookApp] 200 GET /jean-zay-iam20_8002/api/contents?type=directory&_=1670591738476 (10.148.0.38) 125.300000ms
+[D 14:15:42.345 NotebookApp] Path jupyter_tensorboard/tensorboardlist.js served from /gpfs7kw/linkhome/rech/genmic01/use18zg/.local/share/jupyter/nbextensions/jupyter_tensorboard/tensorboardlist.js
+[D 14:15:42.362 NotebookApp] 200 GET /jean-zay-iam20_8002/nbextensions/jupyter_tensorboard/tensorboardlist.js?v=20221209141500 (10.148.0.38) 22.170000ms
+[D 14:15:42.578 NotebookApp] Path jupyter_tensorboard/style.css served from /gpfs7kw/linkhome/rech/genmic01/use18zg/.local/share/jupyter/nbextensions/jupyter_tensorboard/style.css
+[D 14:15:42.584 NotebookApp] 200 GET /jean-zay-iam20_8002/nbextensions/jupyter_tensorboard/style.css (10.148.0.38) 8.940000ms
+[D 14:15:42.813 NotebookApp] 200 GET /jean-zay-iam20_8002/api/tensorboard?_=1670591738477 (10.148.0.38) 0.350000ms
+[D 14:15:45.076 NotebookApp] 200 GET /jean-zay-iam20_8002/api/contents/GitHub?type=directory&_=1670591738478 (10.148.0.38) 268.470000ms
+[D 14:15:47.627 NotebookApp] 200 GET /jean-zay-iam20_8002/api/contents/GitHub/latent-diffusion?type=directory&_=1670591738479 (10.148.0.38) 101.240000ms
+[D 14:15:50.712 NotebookApp] Using contents: services/contents
+[D 14:15:50.735 NotebookApp] Path base/images/favicon-file.ico served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/base/images/favicon-file.ico
+[D 14:15:50.773 NotebookApp] Path components/codemirror/lib/codemirror.css served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/codemirror/lib/codemirror.css
+[D 14:15:50.815 NotebookApp] Path components/codemirror/addon/dialog/dialog.css served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/codemirror/addon/dialog/dialog.css
+[D 14:15:50.837 NotebookApp] Path edit/js/main.min.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/edit/js/main.min.js
+[D 14:15:50.867 NotebookApp] 200 GET /jean-zay-iam20_8002/edit/GitHub/latent-diffusion/main.py (10.148.0.38) 155.410000ms
+[D 14:15:51.060 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/codemirror/lib/codemirror.css?v=a545ad5e21a51420a7cb40234688eef087a5cf3798f64d7750291a8be0e9c760b8a1c9cbbbdcaa6470f2f385caa59e816f2640f609d29147f4762e27f69709e6 (10.148.0.38) 0.660000ms
+[D 14:15:51.061 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/codemirror/addon/dialog/dialog.css?v=e7f5db4afaccf8a00c10d62c3693642323d3fcf17604a4797803df04e4f144a944dc646c2fda20548df538ada775570127b2a15403996a171ced1769697f3ee4 (10.148.0.38) 0.600000ms
+[D 14:15:51.242 NotebookApp] 304 GET /jean-zay-iam20_8002/custom/custom.css (10.148.0.38) 0.470000ms
+[D 14:15:51.277 NotebookApp] 200 GET /jean-zay-iam20_8002/static/edit/js/main.min.js?v=fe7c4d811676ca5d12c6b9c9e5b50ec2b222910274c4e7cdf1820f959f4a69ff10a502a7a202234af4fe6e9d24a4c6b81e6f1827febc9d1b4e28b7de594b060d (10.148.0.38) 4.220000ms
+[D 14:15:56.560 NotebookApp] 304 GET /jean-zay-iam20_8002/custom/custom-preload.js?v=20221209141500 (10.148.0.38) 0.640000ms
+[D 14:15:56.746 NotebookApp] Paths used for configuration of edit: 
+    	/etc/jupyter/nbconfig/edit.json
+[D 14:15:56.746 NotebookApp] Paths used for configuration of edit: 
+    	/usr/local/etc/jupyter/nbconfig/edit.json
+[D 14:15:56.746 NotebookApp] Paths used for configuration of edit: 
+    	/linkhome/rech/genmic01/use18zg/.local/etc/jupyter/nbconfig/edit.json
+[D 14:15:56.746 NotebookApp] Paths used for configuration of edit: 
+    	/gpfs7kw/linkhome/rech/genmic01/use18zg/.jupyter/nbconfig/edit.json
+[D 14:15:56.747 NotebookApp] Paths used for configuration of edit: 
+    	/gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/etc/jupyter/nbconfig/edit.json
+[D 14:15:56.747 NotebookApp] 200 GET /jean-zay-iam20_8002/api/config/edit?_=1670591756323 (10.148.0.38) 1.860000ms
+[D 14:15:56.999 NotebookApp] 200 GET /jean-zay-iam20_8002/api/contents/GitHub/latent-diffusion/main.py?type=file&format=text&_=1670591756325 (10.148.0.38) 34.350000ms
+[D 14:15:57.018 NotebookApp] Paths used for configuration of common: 
+    	/etc/jupyter/nbconfig/common.json
+[D 14:15:57.018 NotebookApp] Paths used for configuration of common: 
+    	/usr/local/etc/jupyter/nbconfig/common.json
+[D 14:15:57.019 NotebookApp] Paths used for configuration of common: 
+    	/linkhome/rech/genmic01/use18zg/.local/etc/jupyter/nbconfig/common.json
+[D 14:15:57.019 NotebookApp] Paths used for configuration of common: 
+    	/gpfs7kw/linkhome/rech/genmic01/use18zg/.jupyter/nbconfig/common.json
+[D 14:15:57.019 NotebookApp] Paths used for configuration of common: 
+    	/gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/etc/jupyter/nbconfig/common.json
+[D 14:15:57.019 NotebookApp] 200 GET /jean-zay-iam20_8002/api/config/common?_=1670591756324 (10.148.0.38) 1.710000ms
+[D 14:15:57.100 NotebookApp] 200 GET /jean-zay-iam20_8002/static/base/images/favicon-file.ico?v=f9f0a782d7d67b3a57bf7dce251d771b405c7890604576ec8b9a621a39d7670f6b43ffabef1e566f1cd741ee302e15977d9e1cf60bbacebafe75787b9916415c (10.148.0.38) 0.600000ms
+[D 14:15:57.169 NotebookApp] 304 GET /jean-zay-iam20_8002/custom/custom.js?v=20221209141500 (10.148.0.38) 0.480000ms
+[D 14:15:57.406 NotebookApp] Path components/codemirror/mode/python/python.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/codemirror/mode/python/python.js
+[D 14:15:57.432 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/codemirror/mode/python/python.js?v=20221209141500 (10.148.0.38) 63.450000ms
+[D 14:19:27.642 NotebookApp] 200 GET /jean-zay-iam20_8002/api/sessions?_=1670591738480 (10.148.0.38) 0.550000ms
+[D 14:19:27.678 NotebookApp] 200 GET /jean-zay-iam20_8002/api/terminals?_=1670591738481 (10.148.0.38) 0.340000ms
+[D 14:19:27.846 NotebookApp] 200 GET /jean-zay-iam20_8002/api/contents/GitHub/latent-diffusion?type=directory&_=1670591738482 (10.148.0.38) 6.390000ms
+[I 14:19:39.082 NotebookApp] Creating new notebook in /GitHub/latent-diffusion
+[D 14:19:39.164 NotebookApp] Saving /linkhome/rech/genmic01/use18zg/GitHub/latent-diffusion/Untitled.ipynb
+[D 14:19:39.577 NotebookApp] 201 POST /jean-zay-iam20_8002/api/contents/GitHub/latent-diffusion (10.148.0.38) 495.150000ms
+[D 14:19:40.271 NotebookApp] Using contents: services/contents
+[D 14:19:40.405 NotebookApp] Path base/images/favicon-notebook.ico served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/base/images/favicon-notebook.ico
+[D 14:19:40.466 NotebookApp] Path components/bootstrap-tour/build/css/bootstrap-tour.min.css served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/bootstrap-tour/build/css/bootstrap-tour.min.css
+[D 14:19:40.477 NotebookApp] Path notebook/css/override.css served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/notebook/css/override.css
+[D 14:19:43.623 NotebookApp] Path components/text-encoding/lib/encoding.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/text-encoding/lib/encoding.js
+[D 14:19:43.665 NotebookApp] Path notebook/js/main.min.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/notebook/js/main.min.js
+[D 14:19:43.701 NotebookApp] 200 GET /jean-zay-iam20_8002/notebooks/GitHub/latent-diffusion/Untitled.ipynb?kernel_name=python3 (10.148.0.38) 3430.310000ms
+[D 14:19:43.901 NotebookApp] Path components/MathJax/MathJax.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/MathJax/MathJax.js
+[D 14:19:43.950 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full,Safe&delayStartupUntil=configured (10.148.0.38) 68.320000ms
+[D 14:19:44.199 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/bootstrap-tour/build/css/bootstrap-tour.min.css?v=95c93e52db61ab29625defe55361384ce6776a7d303b97da5a73fef5ddf8e391a6223599a0b58669476bd71645a4f0022df0517c88b0c05df80ba465e36f5417 (10.148.0.38) 0.610000ms
+[D 14:19:44.253 NotebookApp] 200 GET /jean-zay-iam20_8002/static/notebook/css/override.css?v=16733f6ba5f2224692fe4e654f3cbb2e3cae82f1df06ca53aa1cb88b147465f16c968c0898e2b0203a7ad3a469f82b959e26bb4b27b790f7f364c4336449b0aa (10.148.0.38) 0.580000ms
+[D 14:19:44.457 NotebookApp] 304 GET /jean-zay-iam20_8002/custom/custom.css (10.148.0.38) 0.470000ms
+[D 14:19:44.576 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/text-encoding/lib/encoding.js?v=737ac6f9f978afb6348b5914877e7d7136de7465cd4cdf389bad9a6b3ad5ceffbfb23febc75c23378967d7d36f98f5388208e8eb78c80f2bf47e8f8c000481ad (10.148.0.38) 0.640000ms
+[D 14:19:44.663 NotebookApp] Path components/MathJax/config/TeX-AMS-MML_HTMLorMML-full.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/MathJax/config/TeX-AMS-MML_HTMLorMML-full.js
+[D 14:19:44.678 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/MathJax/config/TeX-AMS-MML_HTMLorMML-full.js?V=2.7.9 (10.148.0.38) 35.350000ms
+[D 14:19:45.393 NotebookApp] 200 GET /jean-zay-iam20_8002/static/notebook/js/main.min.js?v=5d664a98b149be4b10965f3e752be463eb21021100eee38d351219939750190c69412864b1a9ff459ca2735a5cc9a4c063c86c50a6495ec81ed2cb8ec835e179 (10.148.0.38) 784.540000ms
+[D 14:19:47.090 NotebookApp] Path components/MathJax/config/Safe.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/MathJax/config/Safe.js
+[D 14:19:47.091 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/MathJax/config/Safe.js?V=2.7.9 (10.148.0.38) 9.200000ms
+[D 14:19:54.524 NotebookApp] 200 GET /jean-zay-iam20_8002/static/base/images/favicon-notebook.ico?v=eb02bb6f6435d048eba1bf1bd3b3621f8c14f26518dbadd8efd4ee6ee2721caf2367bc0cbc27d2ee2c35bc3b035aad07c6d625422b9445bf301897f493d0edc5 (10.148.0.38) 0.740000ms
+[D 14:19:55.065 NotebookApp] 304 GET /jean-zay-iam20_8002/custom/custom-preload.js?v=20221209141500 (10.148.0.38) 0.510000ms
+[D 14:19:55.378 NotebookApp] Paths used for configuration of notebook: 
+    	/etc/jupyter/nbconfig/notebook.json
+[D 14:19:55.378 NotebookApp] Paths used for configuration of notebook: 
+    	/usr/local/etc/jupyter/nbconfig/notebook.json
+[D 14:19:55.378 NotebookApp] Paths used for configuration of notebook: 
+    	/linkhome/rech/genmic01/use18zg/.local/etc/jupyter/nbconfig/notebook.json
+[D 14:19:55.378 NotebookApp] Paths used for configuration of notebook: 
+    	/gpfs7kw/linkhome/rech/genmic01/use18zg/.jupyter/nbconfig/notebook.json
+[D 14:19:55.427 NotebookApp] Paths used for configuration of notebook: 
+    	/gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/etc/jupyter/nbconfig/notebook.d/pydeck.json
+    	/gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/etc/jupyter/nbconfig/notebook.d/widgetsnbextension.json
+    	/gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/etc/jupyter/nbconfig/notebook.json
+[D 14:19:55.474 NotebookApp] 200 GET /jean-zay-iam20_8002/api/config/notebook?_=1670591994382 (10.148.0.38) 96.920000ms
+[D 14:19:55.475 NotebookApp] Paths used for configuration of common: 
+    	/etc/jupyter/nbconfig/common.json
+[D 14:19:55.475 NotebookApp] Paths used for configuration of common: 
+    	/usr/local/etc/jupyter/nbconfig/common.json
+[D 14:19:55.475 NotebookApp] Paths used for configuration of common: 
+    	/linkhome/rech/genmic01/use18zg/.local/etc/jupyter/nbconfig/common.json
+[D 14:19:55.476 NotebookApp] Paths used for configuration of common: 
+    	/gpfs7kw/linkhome/rech/genmic01/use18zg/.jupyter/nbconfig/common.json
+[D 14:19:55.476 NotebookApp] Paths used for configuration of common: 
+    	/gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/etc/jupyter/nbconfig/common.json
+[D 14:19:55.476 NotebookApp] 200 GET /jean-zay-iam20_8002/api/config/common?_=1670591994383 (10.148.0.38) 1.680000ms
+[D 14:19:55.484 NotebookApp] Found kernel python3 in /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/share/jupyter/kernels
+[D 14:19:55.484 NotebookApp] 304 GET /jean-zay-iam20_8002/api/kernelspecs (10.148.0.38) 1.040000ms
+[D 14:19:55.551 NotebookApp] 200 GET /jean-zay-iam20_8002/api/contents/GitHub/latent-diffusion/Untitled.ipynb?type=notebook&_=1670591994384 (10.148.0.38) 31.800000ms
+[D 14:19:55.602 NotebookApp] Path components/MathJax/extensions/TeX/newcommand.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/MathJax/extensions/TeX/newcommand.js
+[D 14:19:55.622 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/MathJax/extensions/TeX/newcommand.js?V=2.7.9 (10.148.0.38) 22.150000ms
+[D 14:19:55.643 NotebookApp] Path components/MathJax/extensions/TeX/begingroup.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/MathJax/extensions/TeX/begingroup.js
+[D 14:19:55.644 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/MathJax/extensions/TeX/begingroup.js?V=2.7.9 (10.148.0.38) 1.760000ms
+[D 14:19:55.668 NotebookApp] Path components/MathJax/extensions/MathML/content-mathml.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/MathJax/extensions/MathML/content-mathml.js
+[D 14:19:55.688 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/MathJax/extensions/MathML/content-mathml.js?V=2.7.9 (10.148.0.38) 22.200000ms
+[D 14:19:55.791 NotebookApp] Instantiating kernel 'Python 3 (ipykernel)' with kernel provisioner: local-provisioner
+[D 14:19:55.829 NotebookApp] Starting kernel: ['/gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/bin/python', '-m', 'ipykernel_launcher', '-f', '/gpfsdswork/projects/rech/flr/use18zg/.local/share/jupyter/runtime/kernel-36fc81b8-0ea6-4dc3-9341-26e876eb73b9.json']
+[D 14:19:55.838 NotebookApp] Connecting to: tcp://127.0.0.1:55169
+[D 14:19:55.841 NotebookApp] 200 GET /jean-zay-iam20_8002/api/contents/GitHub/latent-diffusion/Untitled.ipynb/checkpoints?_=1670591994385 (10.148.0.38) 1.100000ms
+[D 14:19:55.841 NotebookApp] Serving kernel resource from: /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/share/jupyter/kernels/python3
+[D 14:19:55.862 NotebookApp] 200 GET /jean-zay-iam20_8002/kernelspecs/python3/logo-64x64.png (10.148.0.38) 22.010000ms
+[D 14:19:55.898 NotebookApp] Path components/MathJax/jax/output/HTML-CSS/fonts/STIX-Web/fontdata.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/MathJax/jax/output/HTML-CSS/fonts/STIX-Web/fontdata.js
+[D 14:19:55.909 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/MathJax/jax/output/HTML-CSS/fonts/STIX-Web/fontdata.js?V=2.7.9 (10.148.0.38) 46.840000ms
+[D 14:19:55.911 NotebookApp] Connecting to: tcp://127.0.0.1:45315
+[I 14:19:55.912 NotebookApp] Kernel started: 36fc81b8-0ea6-4dc3-9341-26e876eb73b9, name: python3
+[D 14:19:55.912 NotebookApp] Kernel args: {'kernel_name': 'python3', 'cwd': '/linkhome/rech/genmic01/use18zg/GitHub/latent-diffusion'}
+[D 14:19:55.912 NotebookApp] 201 POST /jean-zay-iam20_8002/api/sessions (10.148.0.38) 221.470000ms
+[D 14:19:55.913 NotebookApp] 304 GET /jean-zay-iam20_8002/custom/custom.js?v=20221209141500 (10.148.0.38) 0.540000ms
+[D 14:19:55.967 NotebookApp] Using contents: services/contents
+[W 14:19:55.973 NotebookApp] 404 GET /jean-zay-iam20_8002/nbextensions/pydeck/extension.js?v=20221209141500 (10.148.0.38) 38.480000ms referer=https://idrvprox.idris.fr/jean-zay-iam20_8002/notebooks/GitHub/latent-diffusion/Untitled.ipynb?kernel_name=python3
+[D 14:19:56.050 NotebookApp] Path jupyter-js-widgets/extension.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/share/jupyter/nbextensions/jupyter-js-widgets/extension.js
+[D 14:19:56.075 NotebookApp] 200 GET /jean-zay-iam20_8002/nbextensions/jupyter-js-widgets/extension.js?v=20221209141500 (10.148.0.38) 65.790000ms
+[D 14:19:56.077 NotebookApp] Path components/MathJax/extensions/Safe.js served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/components/MathJax/extensions/Safe.js
+[D 14:19:56.090 NotebookApp] 200 GET /jean-zay-iam20_8002/static/components/MathJax/extensions/Safe.js?V=2.7.9 (10.148.0.38) 14.620000ms
+[D 14:19:56.091 NotebookApp] Initializing websocket connection /jean-zay-iam20_8002/api/kernels/36fc81b8-0ea6-4dc3-9341-26e876eb73b9/channels
+[D 14:19:56.092 NotebookApp] Requesting kernel info from 36fc81b8-0ea6-4dc3-9341-26e876eb73b9
+[D 14:19:56.092 NotebookApp] Connecting to: tcp://127.0.0.1:35837
+[D 14:19:56.774 NotebookApp] Using contents: services/contents
+[W 14:19:56.774 NotebookApp] 404 GET /jean-zay-iam20_8002/nbextensions/widgets/notebook/js/extension.js?v=20221209141500 (10.148.0.38) 0.960000ms referer=https://idrvprox.idris.fr/jean-zay-iam20_8002/notebooks/GitHub/latent-diffusion/Untitled.ipynb?kernel_name=python3
+[D 14:19:57.769 NotebookApp] Path base/images/favicon-busy-1.ico served from /gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbclassic/static/base/images/favicon-busy-1.ico
+[D 14:19:57.770 NotebookApp] 200 GET /jean-zay-iam20_8002/static/base/images/favicon-busy-1.ico (10.148.0.38) 8.630000ms
+[D 14:20:09.183 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (starting)
+[D 14:20:09.184 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (busy)
+[D 14:20:09.185 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (idle)
+[D 14:20:09.186 NotebookApp] Received kernel info: {'status': 'ok', 'protocol_version': '5.3', 'implementation': 'ipython', 'implementation_version': '8.6.0', 'language_info': {'name': 'python', 'version': '3.8.5', 'mimetype': 'text/x-python', 'codemirror_mode': {'name': 'ipython', 'version': 3}, 'pygments_lexer': 'ipython3', 'nbconvert_exporter': 'python', 'file_extension': '.py'}, 'banner': "Python 3.8.5 (default, Sep  4 2020, 07:30:14) \nType 'copyright', 'credits' or 'license' for more information\nIPython 8.6.0 -- An enhanced Interactive Python. Type '?' for help.\n", 'help_links': [{'text': 'Python Reference', 'url': 'https://docs.python.org/3.8'}, {'text': 'IPython Reference', 'url': 'https://ipython.org/documentation.html'}, {'text': 'NumPy Reference', 'url': 'https://docs.scipy.org/doc/numpy/reference/'}, {'text': 'SciPy Reference', 'url': 'https://docs.scipy.org/doc/scipy/reference/'}, {'text': 'Matplotlib Reference', 'url': 'https://matplotlib.org/contents.html'}, {'text': 'SymPy Reference', 'url': 'http://docs.sympy.org/latest/index.html'}, {'text': 'pandas Reference', 'url': 'https://pandas.pydata.org/pandas-docs/stable/'}]}
+[D 14:20:09.186 NotebookApp] 101 GET /jean-zay-iam20_8002/api/kernels/36fc81b8-0ea6-4dc3-9341-26e876eb73b9/channels?session_id=2921b981b6674297870eb3895517bddf (10.148.0.38) 13095.500000ms
+[D 14:20:09.186 NotebookApp] Opening websocket /jean-zay-iam20_8002/api/kernels/36fc81b8-0ea6-4dc3-9341-26e876eb73b9/channels
+[D 14:20:09.187 NotebookApp] Getting buffer for 36fc81b8-0ea6-4dc3-9341-26e876eb73b9
+[D 14:20:09.187 NotebookApp] Connecting to: tcp://127.0.0.1:45315
+[D 14:20:09.187 NotebookApp] Connecting to: tcp://127.0.0.1:35837
+[D 14:20:09.187 NotebookApp] Connecting to: tcp://127.0.0.1:55169
+[D 14:20:09.187 NotebookApp] Connecting to: tcp://127.0.0.1:41545
+[D 14:20:09.187 NotebookApp] Connecting to: tcp://127.0.0.1:35837
+[D 14:20:09.187 NotebookApp] Connecting to: tcp://127.0.0.1:55169
+[D 14:20:09.188 NotebookApp] Nudge: attempt 1 on kernel 36fc81b8-0ea6-4dc3-9341-26e876eb73b9
+[D 14:20:09.189 NotebookApp] Nudge: IOPub received: 36fc81b8-0ea6-4dc3-9341-26e876eb73b9
+[D 14:20:09.190 NotebookApp] Nudge: resolving iopub future: 36fc81b8-0ea6-4dc3-9341-26e876eb73b9
+[D 14:20:09.190 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (busy)
+[D 14:20:09.190 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (busy)
+[D 14:20:09.190 NotebookApp] Nudge: control info reply received: 36fc81b8-0ea6-4dc3-9341-26e876eb73b9
+[D 14:20:09.190 NotebookApp] Nudge: resolving control future: 36fc81b8-0ea6-4dc3-9341-26e876eb73b9
+[D 14:20:09.191 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (idle)
+[D 14:20:09.192 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (idle)
+[D 14:20:09.403 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (busy)
+[D 14:20:09.404 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (idle)
+[D 14:20:09.438 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (busy)
+[D 14:20:09.439 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: stream
+[D 14:20:09.439 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: comm_close
+[D 14:20:09.465 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: stream
+[D 14:20:09.465 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (idle)
+[D 14:20:09.466 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (busy)
+[D 14:20:09.467 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (idle)
+[D 14:20:09.518 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (busy)
+[D 14:20:09.518 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (idle)
+[D 14:20:09.732 NotebookApp] 200 GET /jean-zay-iam20_8002/static/base/images/favicon-notebook.ico (10.148.0.38) 0.660000ms
+[D 14:20:16.970 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (busy)
+[D 14:20:16.970 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: execute_input
+[D 14:20:16.971 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: error
+[D 14:20:16.972 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (idle)
+[D 14:20:27.817 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (busy)
+[D 14:20:27.818 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: execute_input
+[D 14:20:29.197 NotebookApp] 304 GET /jean-zay-iam20_8002/static/base/images/favicon-busy-1.ico (10.148.0.38) 0.940000ms
+[D 14:21:32.323 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (idle)
+[D 14:21:32.325 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (busy)
+[D 14:21:32.326 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: execute_input
+[D 14:21:32.327 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (idle)
+[D 14:21:32.327 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (busy)
+[D 14:21:32.338 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: execute_input
+[D 14:21:32.408 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: error
+[D 14:21:32.410 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (idle)
+[D 14:21:32.714 NotebookApp] 304 GET /jean-zay-iam20_8002/static/base/images/favicon-notebook.ico (10.148.0.38) 64.320000ms
+[D 14:21:49.749 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (busy)
+[D 14:21:49.756 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: execute_input
+[D 14:21:49.756 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: error
+[D 14:21:49.758 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (idle)
+[D 14:21:55.853 NotebookApp] 200 GET /jean-zay-iam20_8002/api/contents/GitHub/latent-diffusion/Untitled.ipynb?content=0&_=1670591994386 (10.148.0.38) 7.350000ms
+[I 14:21:56.290 NotebookApp] Saving file at /GitHub/latent-diffusion/Untitled.ipynb
+[D 14:21:56.290 NotebookApp] Saving /linkhome/rech/genmic01/use18zg/GitHub/latent-diffusion/Untitled.ipynb
+/gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/nbformat/__init__.py:128: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+/gpfswork/rech/flr/use18zg/anaconda3/envs/ldm/lib/python3.8/site-packages/notebook/services/contents/manager.py:353: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate_nb(model['content'])
+[D 14:21:56.454 NotebookApp] 200 PUT /jean-zay-iam20_8002/api/contents/GitHub/latent-diffusion/Untitled.ipynb (10.148.0.38) 164.720000ms
+[D 14:22:03.689 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (busy)
+[D 14:22:03.691 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: execute_input
+[D 14:22:03.694 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: stream
+[D 14:22:04.060 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: stream
+[D 14:22:04.509 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: stream
+[D 14:22:05.264 NotebookApp] 304 GET /jean-zay-iam20_8002/static/base/images/favicon-busy-1.ico (10.148.0.38) 1.750000ms
+[D 14:22:09.024 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: stream
+[D 14:22:09.025 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: stream
+[D 14:22:09.025 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: stream
+[D 14:22:09.026 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: stream
+[D 14:22:09.027 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (idle)
+[D 14:22:09.158 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (busy)
+[D 14:22:09.158 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: execute_input
+[D 14:22:09.199 NotebookApp] 304 GET /jean-zay-iam20_8002/static/base/images/favicon-notebook.ico (10.148.0.38) 0.610000ms
+[D 14:22:09.393 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: error
+[D 14:22:09.395 NotebookApp] activity on 36fc81b8-0ea6-4dc3-9341-26e876eb73b9: status (idle)
+[D 14:23:55.921 NotebookApp] 200 GET /jean-zay-iam20_8002/api/contents/GitHub/latent-diffusion/Untitled.ipynb?content=0&_=1670591994387 (10.148.0.38) 0.990000ms
+[I 14:23:56.176 NotebookApp] Saving file at /GitHub/latent-diffusion/Untitled.ipynb
+[D 14:23:56.176 NotebookApp] Saving /linkhome/rech/genmic01/use18zg/GitHub/latent-diffusion/Untitled.ipynb
+[D 14:23:56.272 NotebookApp] 200 PUT /jean-zay-iam20_8002/api/contents/GitHub/latent-diffusion/Untitled.ipynb (10.148.0.38) 96.130000ms
+[D 14:30:22.306 NotebookApp] 200 GET /jean-zay-iam20_8002/api/contents/GitHub/latent-diffusion/main.py?content=0&_=1670591756326 (10.148.0.38) 5.400000ms
+[I 14:30:22.658 NotebookApp] Saving file at /GitHub/latent-diffusion/main.py
+[D 14:30:22.658 NotebookApp] Saving /linkhome/rech/genmic01/use18zg/GitHub/latent-diffusion/main.py
+[D 14:30:22.716 NotebookApp] 200 PUT /jean-zay-iam20_8002/api/contents/GitHub/latent-diffusion/main.py (10.148.0.38) 124.580000ms

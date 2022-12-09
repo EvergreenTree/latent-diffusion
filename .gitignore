@@ -3,3 +3,4 @@ taming
 */__pycache__
 wandb
 *.pyc
+*.ipynb
