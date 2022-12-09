@@ -522,7 +522,7 @@ if __name__ == "__main__":
         for k in nondefault_trainer_args(opt):
             trainer_config[k] = getattr(opt, k)
         if not "gpus" in trainer_config:
-            del trainer_config["accelerator"]
+#            del trainer_config["accelerator"]
             cpu = True
         else:
             gpuinfo = trainer_config["gpus"]
