@@ -997,4 +997,3 @@
 53998.png
 53999.png
 54000.png
-ffhqvalidation.txt

@@ -34,6 +34,14 @@ def nonlinearity(x):
     # swish
     return x*torch.sigmoid(x)
 
+# def nonlinearity(x):
+#     x1 = x[:,:1,:,:]
+#     x_1 = x[:,1:,:,:]
+#     mask = x1 / torch.norm(x_1,2,dim=1,keepdim=True)
+# #     out = x * mask.clamp(-1,1)
+# #     out = x * torch.tanh(mask)
+#     out = x * torch.erf(mask)
+#     return out
 
 def Normalize(in_channels, num_groups=32):
     return torch.nn.GroupNorm(num_groups=num_groups, num_channels=in_channels, eps=1e-6, affine=True)
