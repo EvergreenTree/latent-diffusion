@@ -296,6 +296,7 @@ class ImageLogger(Callback):
         self.max_images = max_images
         self.logger_log_images = {
             pl.loggers.tensorboard.TensorBoardLogger: self._testtube,
+            pl.loggers.wandb.WandbLogger: self._wandb,
         }
         self.log_steps = [2 ** n for n in range(int(np.log2(self.batch_freq)) + 1)]
         if not increase_log_steps:
@@ -316,6 +317,15 @@ class ImageLogger(Callback):
             pl_module.logger.experiment.add_image(
                 tag, grid,
                 global_step=pl_module.global_step)
+            
+    @rank_zero_only
+    def _wandb(self, pl_module, images, batch_idx, split):
+        for k in images:
+            grid = torchvision.utils.make_grid(images[k])
+            grid = (grid + 1.0) / 2.0  # -1,1 -> 0,1; c,h,w
+
+            tag = f"{split}/{k}"
+            pl_module.logger.log_image(key=tag, images=[grid])
 
     @rank_zero_only
     def log_local(self, save_dir, split, images,
@@ -379,7 +389,7 @@ class ImageLogger(Callback):
                 pass
             return True
         return False
-
+    
     def on_train_batch_end(self, trainer, pl_module, outputs, batch, batch_idx, dataloader_idx=0):
         if not self.disabled and (pl_module.global_step > 0 or self.log_first_step):
             self.log_img(pl_module, batch, batch_idx, split="train")
