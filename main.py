@@ -200,9 +200,13 @@ class DataModuleFromConfig(pl.LightningDataModule):
             init_fn = worker_init_fn
         else:
             init_fn = None
-        return DataLoader(self.datasets["train"], batch_size=self.batch_size,
-                          num_workers=self.num_workers, shuffle=False if is_iterable_dataset else True,
-                          worker_init_fn=init_fn)
+        return DataLoader(self.datasets["train"], 
+                          batch_size=self.batch_size,
+                          num_workers=self.num_workers, 
+                          shuffle=False if is_iterable_dataset else True,
+                          worker_init_fn=init_fn,
+                          persistent_workers=True
+                         )
 
     def _val_dataloader(self, shuffle=False):
         if isinstance(self.datasets['validation'], Txt2ImgIterableBaseDataset) or self.use_worker_init_fn:
@@ -213,7 +217,9 @@ class DataModuleFromConfig(pl.LightningDataModule):
                           batch_size=self.batch_size,
                           num_workers=self.num_workers,
                           worker_init_fn=init_fn,
-                          shuffle=shuffle)
+                          shuffle=shuffle,
+                          persistent_workers=True
+                         )
 
     def _test_dataloader(self, shuffle=False):
         is_iterable_dataset = isinstance(self.datasets['train'], Txt2ImgIterableBaseDataset)
@@ -225,16 +231,24 @@ class DataModuleFromConfig(pl.LightningDataModule):
         # do not shuffle dataloader for iterable dataset
         shuffle = shuffle and (not is_iterable_dataset)
 
-        return DataLoader(self.datasets["test"], batch_size=self.batch_size,
-                          num_workers=self.num_workers, worker_init_fn=init_fn, shuffle=shuffle)
+        return DataLoader(self.datasets["test"], 
+                          batch_size=self.batch_size,
+                          num_workers=self.num_workers, 
+                          worker_init_fn=init_fn, 
+                          shuffle=shuffle,
+                          persistent_workers=True
+                         )
 
     def _predict_dataloader(self, shuffle=False):
         if isinstance(self.datasets['predict'], Txt2ImgIterableBaseDataset) or self.use_worker_init_fn:
             init_fn = worker_init_fn
         else:
             init_fn = None
-        return DataLoader(self.datasets["predict"], batch_size=self.batch_size,
-                          num_workers=self.num_workers, worker_init_fn=init_fn)
+        return DataLoader(self.datasets["predict"], 
+                          batch_size=self.batch_size,
+                          num_workers=self.num_workers, 
+                          worker_init_fn=init_fn
+                         )
 
 
 class SetupCallback(Callback):
@@ -310,23 +324,26 @@ class ImageLogger(Callback):
 
     @rank_zero_only
     def _testtube(self, pl_module, images, batch_idx, split):
-        for k in images:
-            grid = torchvision.utils.make_grid(images[k])
-            grid = (grid + 1.0) / 2.0  # -1,1 -> 0,1; c,h,w
+#         for k in images:
+#             grid = torchvision.utils.make_grid(images[k])
+#             grid = (grid + 1.0) / 2.0  # -1,1 -> 0,1; c,h,w
 
-            tag = f"{split}/{k}"
-            pl_module.logger.experiment.add_image(
-                tag, grid,
-                global_step=pl_module.global_step)
+#             tag = f"{split}/{k}"
+#             pl_module.logger.experiment.add_image(
+#                 tag, grid,
+#                 global_step=pl_module.global_step)
+        pass
             
     @rank_zero_only
     def _wandb(self, pl_module, images, batch_idx, split):
-        for k in images:
-            grid = torchvision.utils.make_grid(images[k])
-            grid = (grid + 1.0) / 2.0  # -1,1 -> 0,1; c,h,w
+#         for k in images:
+#             grid = torchvision.utils.make_grid(images[k])
+#             grid = (grid + 1.0) / 2.0  # -1,1 -> 0,1; c,h,w
 
-            tag = f"{split}/{k}"
-            pl_module.logger.log_image(key=tag, images=[grid])
+#             tag = f"{split}/{k}"
+#             images = list(images.values())
+#             pl_module.logger.log_image(key=tag, images=images)
+        pass
 
 
     @rank_zero_only
@@ -558,7 +575,7 @@ if __name__ == "__main__":
                     "name": "tensorboard",
                     "save_dir": logdir,
                     # "offline": opt.debug,
-                    "id": nowname,
+#                     "id": nowname,
                 }
             },
             "wandb": {
@@ -568,8 +585,16 @@ if __name__ == "__main__":
                     "save_dir": logdir,
                 }
             },
+            "csv": {
+                "target": "pytorch_lightning.loggers.CSVLogger",
+                "params": {
+                    "name": "csv",
+                    "save_dir": logdir,
+                }
+            },
+            
         }
-        default_logger_cfg = default_logger_cfgs["wandb"]
+        default_logger_cfg = default_logger_cfgs["csv"]
         if "logger" in lightning_config:
             logger_cfg = lightning_config.logger
         else:
