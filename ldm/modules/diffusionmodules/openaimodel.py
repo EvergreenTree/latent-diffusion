@@ -19,6 +19,23 @@ from ldm.modules.diffusionmodules.util import (
 )
 from ldm.modules.attention import SpatialTransformer
 
+class CoSiLU(nn.Module):
+    def __init__(self):
+        super(CoSiLU, self).__init__()
+    def forward(self, x):
+        x1 = x[:,:1]
+        x_1 = x[:,1:]
+        premask = x1 / th.norm(x_1,2,dim=1,keepdim=True)
+        mask = th.erf(premask)
+        return x * mask
+    
+# # make sure baseline works
+# class CoSiLU(nn.Module):
+#     def __init__(self):
+#         super(CoSiLU, self).__init__()
+#         self.fun = nn.SiLU()
+#     def forward(self, x):
+#         return self.fun(x)
 
 # dummy replace
 def convert_module_to_f16(x):
@@ -200,7 +217,7 @@ class ResBlock(TimestepBlock):
 
         self.in_layers = nn.Sequential(
             normalization(channels),
-            nn.SiLU(),
+            CoSiLU(),
             conv_nd(dims, channels, self.out_channels, 3, padding=1),
         )
 
@@ -224,7 +241,7 @@ class ResBlock(TimestepBlock):
         )
         self.out_layers = nn.Sequential(
             normalization(self.out_channels),
-            nn.SiLU(),
+            CoSiLU(),
             nn.Dropout(p=dropout),
             zero_module(
                 conv_nd(dims, self.out_channels, self.out_channels, 3, padding=1)
@@ -681,7 +698,7 @@ class UNetModel(nn.Module):
 
         self.out = nn.Sequential(
             normalization(ch),
-            nn.SiLU(),
+            CoSiLU(),
             zero_module(conv_nd(dims, model_channels, out_channels, 3, padding=1)),
         )
         if self.predict_codebook_ids:
@@ -891,7 +908,7 @@ class EncoderUNetModel(nn.Module):
         if pool == "adaptive":
             self.out = nn.Sequential(
                 normalization(ch),
-                nn.SiLU(),
+                CoSiLU(),
                 nn.AdaptiveAvgPool2d((1, 1)),
                 zero_module(conv_nd(dims, ch, out_channels, 1)),
                 nn.Flatten(),
@@ -900,7 +917,7 @@ class EncoderUNetModel(nn.Module):
             assert num_head_channels != -1
             self.out = nn.Sequential(
                 normalization(ch),
-                nn.SiLU(),
+                CoSiLU(),
                 AttentionPool2d(
                     (image_size // ds), ch, num_head_channels, out_channels
                 ),
@@ -915,7 +932,7 @@ class EncoderUNetModel(nn.Module):
             self.out = nn.Sequential(
                 nn.Linear(self._feature_size, 2048),
                 normalization(2048),
-                nn.SiLU(),
+                CoSiLU(),
                 nn.Linear(2048, self.out_channels),
             )
         else:

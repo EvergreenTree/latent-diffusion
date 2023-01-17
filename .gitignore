@@ -3,4 +3,6 @@ taming
 */__pycache__
 wandb
 *.pyc
-*.ipynb
+*.zip
+*.ckpt
+

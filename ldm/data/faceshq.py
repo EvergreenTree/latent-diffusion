@@ -70,6 +70,39 @@ class FFHQValidation(FacesBase):
         self.keys = keys
 
 
+
+class AFHQTrain(FacesBase):
+    def __init__(self, size, keys=None):
+        super().__init__()
+        root = "/"
+        with open("data/afhqtrain.txt", "r") as f:
+            relpaths = f.read().splitlines()
+        paths = [os.path.join(root, relpath) for relpath in relpaths]
+        self.data = ImagePaths(paths=paths, size=size, random_crop=False)
+        self.keys = keys
+
+
+class AFHQValidation(FacesBase):
+    def __init__(self, size, keys=None):
+        super().__init__()
+        root = "/"
+        with open("data/afhqvalidation.txt", "r") as f:
+            relpaths = f.read().splitlines()
+        paths = [os.path.join(root, relpath) for relpath in relpaths]
+        self.data = ImagePaths(paths=paths, size=size, random_crop=False)
+        self.keys = keys
+        
+class AFHQ(FacesBase):
+    def __init__(self, size, keys=None, path=None):
+        """ e.g. path = "data/afhqvalidation.txt"."""
+        super().__init__()
+        with open(path, "r") as f:
+            relpaths = f.read().splitlines()
+        paths = [relpath for relpath in relpaths]
+        self.data = ImagePaths(paths=paths, size=size, random_crop=False)
+        self.keys = keys
+
+
 class FacesHQTrain(Dataset):
     # CelebAHQ [0] + FFHQ [1]
     def __init__(self, size, keys=None, crop_size=None, coord=False):

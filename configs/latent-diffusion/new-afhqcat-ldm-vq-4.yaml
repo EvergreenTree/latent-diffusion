@@ -60,25 +60,27 @@ model:
 data:
   target: main.DataModuleFromConfig
   params:
-    batch_size: 24
+    batch_size: 32
     num_workers: 5
     wrap: false
     train:
-      target: ldm.data.faceshq.FFHQTrain
+      target: ldm.data.faceshq.AFHQ
       params:
         size: 256
+        path: data/afhqcattrain.txt
     validation:
-      target: ldm.data.faceshq.FFHQValidation
+      target: ldm.data.faceshq.AFHQ
       params:
         size: 256
+        path: data/afhqcatvalidation.txt
 
 lightning:
   callbacks:
     image_logger:
       target: main.ImageLogger
       params:
-        batch_frequency: 1000
-        max_images: 4
+        batch_frequency: 5000
+        max_images: 8
         increase_log_steps: False
 
   trainer:

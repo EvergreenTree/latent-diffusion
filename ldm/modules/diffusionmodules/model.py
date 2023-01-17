@@ -30,17 +30,17 @@ def get_timestep_embedding(timesteps, embedding_dim):
     return emb
 
 
-# def nonlinearity(x):
-#     # swish
-#     return x*torch.sigmoid(x)
-
 def nonlinearity(x):
-    # CoSiLU
-    x1 = x[:,:1,:,:]
-    x_1 = x[:,1:,:,:]
-    premask = x1 / torch.norm(x_1,2,dim=1,keepdim=True)
-    out = x * torch.atan(premask)
-    return out
+    # swish
+    return x*torch.sigmoid(x)
+
+# def nonlinearity(x):
+#     # CoSiLU
+#     x1 = x[:,:1,:,:]
+#     x_1 = x[:,1:,:,:]
+#     premask = x1 / torch.norm(x_1,2,dim=1,keepdim=True)
+#     out = x * torch.atan(premask)
+#     return out
 
 # def nonlinearity(x):
 #     x1 = x[:,:1,:,:]
