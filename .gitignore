@@ -6,3 +6,7 @@ wandb
 *.zip
 *.ckpt
 
+
+ckpt/
+lightning_logs/
+dataset/
